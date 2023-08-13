@@ -1,13 +1,128 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* src/index.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+
+.btn {
+  background: linear-gradient(
+    92.23deg,
+    #ff56f6 21.43%,
+    #b936ee 50.63%,
+    #3bace2 100%,
+    #406aff 117.04%
+  );
+  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn:hover {
+  background: linear-gradient(
+    92.23deg,
+    #406aff 21.43%,
+    #3bace2 50.63%,
+    #b936ee 100%,
+    #ff56f6 117.04%
+  );
 }
+
+.title-style-guide{
+  font-family: 'Poppins', sans-serif;
+
+}
+
+/* src/index.css */
+.silver-text {
+  color: silver;
+  
+}
+
+.platinum-text {
+  color: #E5E4E2; /* Replace with your platinum color */
+}
+
+.gold-text {
+  color: gold;
+}
+
+.h1-head{
+  font-family: 'Tektur', cursive;
+  font-size: 40pt;
+}
+
+.h2-head{
+  font-family: 'Tektur', cursive;
+  font-size: 32pt;
+}
+.h3-head{
+  font-family: 'Tektur', cursive;
+  font-size: 26pt;
+
+}
+
+
+.h4-head{
+  font-family: 'Tektur', cursive;
+  font-size: 22pt;
+}
+
+.h5-head{
+  font-family: 'Tektur', cursive;
+  font-size: 20pt;
+}
+
+.h6-head{
+  font-family: 'Tektur', cursive;
+  font-size: 13pt;
+}
+
+.gradient,
+.active {
+  background: linear-gradient(
+    92.23deg,
+    #406aff 21.43%,
+    #3bace2 50.63%,
+    #b936ee 100%,
+    #ff56f6 117.04%
+  );
+}
+
+@layer base{
+  .text-gradient {
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
+  }
+  .btn-link {
+    @apply text-base;
+  }
+}
+
+.text-paragraph{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16pt;
+}
+
+body{
+  background-color: black;
+}
+
+.myDatePicker fieldset.MuiOutlinedInput-notchedOutline {
+  border-color: green;
+}
+
+.myDatePicker .Mui-focused fieldset.MuiOutlinedInput-notchedOutline {
+  border-color: red;
+  color: white;
+}
+
+
+/* Replace these colors with your desired colors */
+.custom-input-root {
+  border-color: purple; /* Custom border color */
+}
+
+.custom-input-focused::placeholder {
+  color: purple; /* Custom placeholder color */
+}
+
